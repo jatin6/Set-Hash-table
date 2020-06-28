@@ -1,0 +1,40 @@
+furniture = ["Table", "Chair", "Sofa"]
+
+if 'Chair' in furniture:
+	print ("Yes")
+	
+#array method
+
+furniture = {"Table", "Chair", "Sofa"}
+if 'Chair' in furniture:
+	print ("Yes")
+
+#set or hashtable method
+
+"""
+HOW A SET WORKS:
+
+Steps for building the set:
+
+1. Calculate total ASCII value of each word in the set
+	The total number of different ASCII values required is the base that will be used
+	So, in this example, 52
+	Multiply each character's ASCII value by the power of 52, depending on its position
+	Add the total
+	
+2. Know the total number of slots/spaces/rows in the table
+	Calculate (total from step 1) mod (number of rows in the table)
+
+3. Insert the item at step 2's answer's location in the table
+
+What happens when searching the set:
+
+1. The program calculates step 1 and step 2 for the string to be searched
+
+2. It then goes to that location in the table
+
+3. It searches through all of the values at that location in the table
+	There is the possibility that nothing is present there
+
+4. Return true if found, otherwise false
+"""
