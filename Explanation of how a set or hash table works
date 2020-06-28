@@ -39,5 +39,5 @@ What happens when searching the set:
 4. Return true if found, otherwise false
 
 Therefore, number of steps for building the set is O(n). The number of steps for searching the set is O(1) on average.
-The number of steps for searching an array is O(n) on average.
+The number of steps for building the array is 0(n). The number The number of steps for searching an array is O(n) on average.
 """
